@@ -1,5 +1,5 @@
 REPOSITORY_URL="https://github.com/RyumaRyama/homebrew-texmk"
-HOMEBREW_TEXMK_VERSION="0.0.1"
+HOMEBREW_TEXMK_VERSION="0.0.2"
 
 class Texmk < Formula
   desc ""
