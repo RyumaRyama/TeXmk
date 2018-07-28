@@ -1,0 +1,16 @@
+#!/bin/sh
+#引数が1つではない場合終了
+if [ $# -ne 1 ] ; then
+	echo 'Use "texmk [FILE NAME]"'
+	exit 1
+fi
+fileName=$1
+if [[ ! $1 =~ .*\.tex ]] ; then	
+	fileName="$1.tex"
+fi
+if [ ! -e $fileName ] ; then
+    cp `which texmk | sed -e "s/\(.*\/\)texmk/\1/g"`Template/*.tex ./
+	mv *.tex $fileName
+fi
+tab
+latexmk -pvc $fileName
