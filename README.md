@@ -9,6 +9,14 @@ latexmkを用いてテンプレートからレポートを作成することが�
 
 これらで気持ちよくTeXが書けます．
 
+## インストール方法
+Homebrewでいけます．
+
+    brew tap RyumaRyama/texmk
+    brew install texmk
+
+で行けるはずです．
+
 ### latexmk
     which latexmk
 としてなければインストールします．
